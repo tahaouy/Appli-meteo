@@ -1,0 +1,83 @@
+/* Style global */
+body {
+    background: linear-gradient(135deg, #ece9e6 0%, #ffffff 100%);
+    font-family: 'Helvetica Neue', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenu météo */
+#meteo-contenu {
+    background: #ffffff;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 350px; /* Réduction de la largeur */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style du champ de saisie */
+input[type="text"] {
+    width: 180px; /* Largeur réduite */
+    padding: 10px;
+    border-radius: 5px; /* Bords légèrement arrondis */
+    border: 1px solid #ccc; /* Bordure subtile */
+    transition: width 0.4s ease; /* Transition pour l'agrandissement */
+    font-size: 16px;
+}
+
+input[type="text"]:focus {
+    width: 250px; /* Agrandissement au focus */
+    border-color: #007BFF; /* Changement de couleur au focus */
+    outline: none;
+}
+
+/* Style du bouton */
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Icones et infos météo */
+#meteo-icon {
+    height: 120px;
+    margin-top: 20px;
+}
+
+#meteo-info {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#humidity, #wind-speed {
+    font-size: 18px;
+    color: #555555;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#humid-icon, #vent-icon {
+    height: 30px;
+    width: auto;
+    margin-right: 10px;
+}
