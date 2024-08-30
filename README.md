@@ -1,4 +1,4 @@
-# MeteoApp
+# Appli meteo
 
 Une application météo simple réalisée avec HTML, CSS et JavaScript.
 
