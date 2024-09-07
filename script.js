@@ -7,7 +7,7 @@ function getWeather() {
         return;
     }
 
-    const meteomtn = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    const meteomtn = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     
     fetch(meteomtn)
     .then(response => response.json())
